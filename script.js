@@ -104,14 +104,14 @@ function renderCard(pokemonInfo) {
  
   </div>
   <ul class="list-group list-group-flush">
-  <li class="list-group-item"><h5 style="font-weight: 550">abilities</h5>
+  <li class="list-group-item blue"><h5 style="font-weight: 550">abilities</h5>
   ${abilitiesArr.join(` , `)}</li>
-  <li class="list-group-item"><h5 style="font-weight: 550">type</h5>
+  <li class="list-group-item blue"><h5 style="font-weight: 550">type</h5>
   ${typesArr.join(` , `)}</li>
  
   </ul>
-  <div class="card-body">
-  <a target="_blank" href="https://en.wikipedia.org/wiki/${
+  <div class="card-body gold">
+  <a  target="_blank" href="https://en.wikipedia.org/wiki/${
     pokemonInfo.name
   }" class="card-link">more info from wikipedia</a>
   

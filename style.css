@@ -2,6 +2,9 @@
   font-family: pokeFont;
   src: url(./media/Pokemon\ Solid.ttf);
 }
+body {
+  background-color: red;
+}
 .pokemon-container {
   display: flex;
   flex-direction: column;
@@ -13,10 +16,16 @@
   display: flex;
 }
 
-.form-select {
-  width: 25vw;
+@media (min-width: 768px) {
+  .form-select {
+    width: 25vw;
+  }
 }
-
+@media (max-width: 767px) {
+  .form-select {
+    width: 50vw;
+  }
+}
 .pokemon-selector {
   display: flex;
   justify-content: center;
@@ -35,6 +44,15 @@
   text-align: center;
 }
 
+.gold {
+  background-color: #ffcc01;
+}
+
+.blue {
+  background-color: #3d7dca;
+}
+
 h5 {
   font-family: pokeFont;
-}/*# sourceMappingURL=style.css.map */
+  letter-spacing: 0.2rem;
+} /*# sourceMappingURL=style.css.map */

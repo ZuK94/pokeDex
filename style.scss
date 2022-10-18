@@ -12,8 +12,15 @@
   justify-content: center;
   display: flex;
 }
-.form-select {
-  width: 25vw;
+@media (min-width: 768px) {
+  .form-select {
+    width: 25vw;
+  }
+}
+@media (max-width: 767px) {
+  .form-select {
+    width: 50vw;
+  }
 }
 .pokemon-selector {
   display: flex;
@@ -31,6 +38,13 @@
 .list-group-item {
   text-align: center;
 }
+.gold {
+  background-color: #ffcc01;
+}
+.blue {
+  background-color: #3d7dca;
+}
 h5 {
   font-family: pokeFont;
+  letter-spacing: 0.2rem;
 }
